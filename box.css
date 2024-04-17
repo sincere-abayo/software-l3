@@ -1,0 +1,75 @@
+
+
+.main {
+    background-color: aqua;
+    width: 70%;
+    height: 200px;
+    /* padding: 50px; */
+    padding-top: 100px;
+    /* padding-right: 30px; */
+    padding-left: 50px;
+    margin-top: 20px;
+   /* margin-left: 50px;  */
+   border: 5px dotted green;
+   /* border: 5px solid green;
+   border: 5px dashed green;
+   border: 5px double green; */
+   /* border-top: 5px solid yellow;
+   border-left: 5px dotted red;  */
+   /* border-radius: 10px ; */
+   text-align: center;
+   
+}
+/* Ishimwe@#25 */
+
+.main1{
+    background-color: blueviolet;
+    width: 200px;
+    height: 100px;
+    float: right;
+}
+
+#p1{
+    margin-left: 100px;
+}
+
+
+.position{
+    background-color: brown;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    right: 30px;
+    bottom: 20px;
+}
+
+#p1,#p2{
+   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+ #p1{
+    font-size: 30px;
+   
+ }
+ #p2{
+    font-size: 50px;
+   
+ }
+.position p{
+    color: red;
+}
+
+.position .pos p{
+    color: green;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+
