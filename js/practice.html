@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+<input type="name" id="name" placeholder="enter names">
+<input type="number" id="age" placeholder="enter age">
+
+<select  id="province" onchange="showdistrict()">
+  <option selected disabled >select province</option>
+  <option value="kigali">kigali city</option>
+  <option value="Northern">Northern province</option>
+  <option value="Southern">Southern province</option>
+  <option value="Eastern">Eastern province</option>
+  <option value="Western">Western province</option>
+</select>
+<div id="district">
+
+</div>
+<button type="submit">submit</button>
+
+  </form>
+
+  <script>
+    function showdistrict()
+    {
+      let province=document.getElementById('province')
+      let provinceValue=province.value;
+      let districtBlock= document.getElementById('district');
+  
+      
+      if (provinceValue == "kigali") {
+
+        districtBlock.innerHTML="<select><option>Gasabo</option><option>Kicukiro</option><option>Nyarugenge</option></select>"
+      } 
+
+      else if (provinceValue == "Northern")
+      {
+        districtBlock.innerHTML="<select><option>Gicumbi</option><option>Burera</option><option>Gatsibo</option></select>"
+
+      }
+
+      else if (provinceValue == "Southern")
+      {
+        districtBlock.innerHTML="<select><option>Nyanza</option><option>Kamonyi</option><option>Huye</option></select>"
+
+      }
+      else if (provinceValue == "Eastern")
+      {
+        districtBlock.innerHTML="<select><option>Bugesera</option><option>Kayonzi</option><option>Rwamagana</option></select>"
+
+      }
+      else if (provinceValue == "Western")
+      {
+        districtBlock.innerHTML="<select><option>Rusinzi</option><option>Nyamasheke</option><option>Karongi</option></select>"
+
+      }
+      else{
+        console.log('selection not kigali ',provinceValue);
+        
+      }
+    }
+  </script>
+</body>
+</html>

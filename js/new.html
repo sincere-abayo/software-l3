@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p class="p1">hello p1</p>
+    <p class="p1">hello p2</p>
+    <p class="p1">hello p3</p>
+    <p class="p1">hello p4</p>
+    <p class="p1">hello p5</p>
+
+    <script>
+     const elements= document.getElementsByClassName('p1');
+   for (let i=0; i<elements.length; i++)
+   {
+    let element=elements[i];
+   console.log(element.innerHTML)
+   }
+    </script>
+</body>
+</html>

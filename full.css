@@ -1,0 +1,39 @@
+body{
+    background-color: blueviolet;
+
+    margin: 0;
+    padding: 0;
+}
+
+.header,.footer{
+    background-color: rgb(83, 196, 63);
+    height: 100px;    
+    
+}
+.header{
+display: flex;
+/* flex-direction: row-reverse; */
+align-items: center;
+justify-content: end; 
+gap: 30px 30px;
+
+}
+
+.header .nav{
+  
+}
+
+.header .nav  a{
+    text-decoration: none;   
+}
+
+.left,.right{
+    background-color: cadetblue;
+    width: 100px;
+    height: 398px;
+}
+
+.group1{
+    display: flex;
+    justify-content: space-between;
+}

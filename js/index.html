@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+    </style>
+</head>
+<body>
+    <p id="p">heloo class</p>
+    <input type="text" id="input" value="hello value">
+
+    <script>
+        //getting html elememt by id
+        const paragraph =  document.getElementById('p');
+        //getting inner html text content
+   const text=  paragraph.innerHTML;
+   paragraph.innerHTML=" new text";
+   const text2=  paragraph.innerHTML;
+
+   //adding css style on html element
+   paragraph.style.color="red";
+   paragraph.style.fontSize="70px"
+
+   console.log(text);
+
+        //getting html elememt by id
+   const input= document.getElementById('input');
+        //getting  html element value
+ let inputValue=  input.value;
+ console.log(inputValue);
+
+    </script> 
+   
+
+</body>
+</html>
