@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Blog</title>
+ 
+  <style>
+    body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+nav{
+    display: flex;
+    justify-content: end;
+}
+#mo{
+    display: block;
+
+}
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+main {
+  width: 80%;
+  margin: 20px auto;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+.menu-icon{
+    display: none;
+}
+.menu-icon img{
+    width: 50px;
+    height: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul{
+        display: none;
+    }
+    .menu-icon{
+        display: flex;
+        justify-content: end;
+        align-items: start;
+    }
+    nav .menu-icon:hover{
+        
+    }
+    #mo{
+        /* display: none; */
+        display: flex;
+        /* flex-direction: column-reverse; */
+        /* justify-content: start; */
+    }
+     #mo ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  
+}
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div id="mo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          
+   </div>
+      <div class="menu-icon">
+      <button id="icon">
+        <img src="th.jpeg" alt="">
+      </button>
+        </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+    </nav>
+   
+  </header>
+  <main>
+    <!-- Blog content will go here -->
+  </main>
+  <footer>
+    <p>&copy; 2023 My Blog. All rights reserved.</p>
+  </footer>
+  <script>
+// Responsive navigation
+const navToggle = document.querySelector('header nav');
+const navList = document.querySelector('header nav ul');
+navToggle.addEventListener('click', () => {
+  navList.classList.toggle('show');
+});
+
+document.getElementById('icon').addEventListener('click', () => {
+document.getElementById('mo').style.display='block';
+})
+  </script>
+</body>
+</html>
