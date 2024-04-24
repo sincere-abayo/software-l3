@@ -78,7 +78,7 @@
     <td>$district</td>
     <td>$dob</td>
     <td>$created_at</td>
-    <td><a href='?id=$id'>edit</a>
+    <td><a href='update.php?id=$id'>edit</a>
     ||
     <a href='delete.php?id=$id'>delete</a></td>
     </tr>";
